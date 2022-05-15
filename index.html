@@ -2,18 +2,6 @@
 <html lan="en">
 
 <head>
-    <rewrite>
-        <rules>
-            <rule name="RewriteURL" stopProcessing="true">
-                <match url="^(.*)$" />
-                <conditions>
-                    <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-                    <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-                </conditions>
-                <action type="Rewrite" url="{R:1}.html" />
-            </rule>
-        </rules>
-    </rewrite>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
     <meta name="description" content="This is a personal portfolio web page. It consists of a description about me, my abilities, blog, acomplishments and how to contact me if you want.">
