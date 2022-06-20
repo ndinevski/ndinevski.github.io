@@ -11,6 +11,7 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
+    --logo-color: hsl(var(--hue-color), 85%, 20%);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -200,12 +201,12 @@ img {
 .nav__logo {
     float: left;
     margin-top: 0.75rem;
-    margin-left: 2rem;
+    margin-left: 0.9rem;
 }
 
 .nav__logo,
 .nav__toggle {
-    color: var(--first-color);
+    color: var(--logo-color);
     font-weight: var(--font-semi-bold);
 }
 
@@ -308,14 +309,8 @@ img {
     color: var(--first-color-alt);
 }
 
-.home__blob {
-    width: 200px;
-    fill: var(--first-color);
-    margin-left: 4rem;
-}
-
-.home__blob-img {
-    width: 170px;
+.home__img {
+    width: 400px;
 }
 
 .home__data {
@@ -771,9 +766,6 @@ img {
     .home__content {
         grid-template-columns: .25fr 3fr;
     }
-    .home__blob {
-        width: 180px;
-    }
     .skills__title {
         font-size: var(--normal-font-size);
     }
@@ -789,7 +781,7 @@ img {
     .home__data {
         grid-column: initial;
     }
-    .home__img {
+    .home__imgs {
         order: 1;
         justify-self: center;
     }
@@ -856,9 +848,6 @@ img {
         padding-top: 2.5rem;
         column-gap: 2rem;
     }
-    .home__blob {
-        width: 450px;
-    }
     .home__scroll {
         display: block;
     }
@@ -912,9 +901,6 @@ img {
     .footer__container {
         padding: 0;
     }
-    .home__blob {
-        width: 500px;
-    }
     .home__social {
         transform: translateX(-6rem);
     }
@@ -938,5 +924,12 @@ img {
     }
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .home__img {
+        width: 1000px;
+        background-color: black;
     }
 }
