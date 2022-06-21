@@ -927,10 +927,3 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-@media screen and(min-width: 1200px) {
-    .home__img {
-        width: 1000px;
-        background-color: black;
-    }
-}
